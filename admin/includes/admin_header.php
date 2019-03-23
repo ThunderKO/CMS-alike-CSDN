@@ -2,8 +2,16 @@
 <!-- Buffering header in our request of the following php scripts -->
 <!-- Displaying every elements in the same time -->
 <?php ob_start(); ?>
+<?php session_start(); ?>
 <?php include "../includes/db.php" ?>
 <?php include "function.php" ?>
+<?php
+    if(!isset($_SESSION['user_role'])) {
+        header("Location: ../index.php");
+    } else {
+        
+    }
+?>
 <head>
 
     <meta charset="utf-8">
