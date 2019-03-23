@@ -3,21 +3,19 @@
         <tr>
             <th>Id</th>
             <th>Author</th>
-            <th>Title</th>
-            <th>Category</th>
+            <th>Comment</th>
+            <th>Email</th>
             <th>Status</th>
-            <th>Image</th>
-            <th>Tags</th>
-            <th>Comments</th>
+            <th>In Response to</th>
             <th>Date</th>
-            <th>Edit</th>
+            <th>Approve</th>
+            <th>Unapprove</th>
             <th>Delete</th>
         </tr>
     </thead>
     <tbody>
         <?php
-            // fetching posts data operation to db
-            fetch_all_posts();
+            fetch_all_comments();
         ?>
         <!-- Sample Data -->
         <!-- <tr>
@@ -35,5 +33,6 @@
 </table>
 <!-- delete posts data operation to db -->
 <?php
-    delete_posts();
+    update_comments_status();
+    delete_comments();
 ?>

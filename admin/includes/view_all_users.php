@@ -2,22 +2,16 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Author</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Status</th>
-            <th>Image</th>
-            <th>Tags</th>
-            <th>Comments</th>
-            <th>Date</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Username</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Role</th>
         </tr>
     </thead>
     <tbody>
         <?php
-            // fetching posts data operation to db
-            fetch_all_posts();
+            fetch_all_users();
         ?>
         <!-- Sample Data -->
         <!-- <tr>
@@ -35,5 +29,6 @@
 </table>
 <!-- delete posts data operation to db -->
 <?php
-    delete_posts();
+    update_users_role();
+    delete_users();
 ?>
